@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DapperCRUDAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,10 +12,10 @@ namespace DapperCRUDAPI.Controllers
     public class MovieController : Controller
     {
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
 
 
         private readonly Models.MovieRepository movieRepository;
@@ -30,26 +27,51 @@ namespace DapperCRUDAPI.Controllers
         [HttpGet]
         public IEnumerable<Movie> Get()
         {
-            return movieRepository.GetAllMovies();
+            return movieRepository.MovieViewAll();
         }
+
+
         [HttpGet("{id}")]
 
         public Movie Get(int id)
         {
-            return movieRepository.GetByID(id);
+            return movieRepository.ViewMovieByID(id);
+        }
+
+
+        [HttpPost]
+
+        public void Post([FromBody] Movie movie)
+        {
+            if (ModelState.IsValid)
+            {
+                movieRepository.MovieAdd(movie);
+            }
+        }
+
+        [HttpPut]
+
+        public void Put([FromBody] Movie newMovie)
+        {
+            //newMovie.MovieID = id;
+            if (ModelState.IsValid)
+            {
+                movieRepository.MovieUpdate(newMovie);
+            }
+        }
+
+        [HttpDelete]
+
+        public void Delete(int id)
+        {
+            movieRepository.DeleteMovieByID(id);
         }
 
 
 
-        //public Movie Get(int Rating)
-        //{
-        //    return movieRepository.GetByRating(Rating);
-        //}
 
 
 
 
     }
-
-
 }
