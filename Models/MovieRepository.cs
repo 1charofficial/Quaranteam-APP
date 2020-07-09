@@ -49,7 +49,7 @@ namespace DapperCRUDAPI.Models
         {
             using (IDbConnection dbConnection = Connection)
             {
-                string sQuery = @"SELECT * FROM MovieModel WHERE ID=@Id";
+                string sQuery = @"SELECT * FROM MovieModel WHERE MovieID=@MovieID";
                 dbConnection.Open();
                 return dbConnection.Query<Movie>(sQuery, new { ID }).FirstOrDefault();
             }
