@@ -6,7 +6,7 @@ namespace DapperCRUDAPI.Models
     public class Movie
     {
         [Key]
-        public int ID { get; set; }
+        public int MovieID { get; set; }
         public string Title { get; set; }
         public string Genre { get; set; }
         public string Rating { get; set; }

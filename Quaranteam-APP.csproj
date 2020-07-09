@@ -16,8 +16,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.5.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.5.1" />
+    <PackageReference Include="FluentValidation" Version="9.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Movie\" />
+    <Folder Include="Validators\" />
   </ItemGroup>
 </Project>

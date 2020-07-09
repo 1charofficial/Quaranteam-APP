@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using DapperCRUDAPI.Models;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Quaranteam_APP.Validators;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -24,9 +27,12 @@ namespace DapperCRUDAPI.Controllers
         {
             movieRepository = new Models.MovieRepository();
         }
+
+
         [HttpGet]
         public IEnumerable<Movie> Get()
         {
+
             return movieRepository.MovieViewAll();
         }
 
@@ -34,7 +40,8 @@ namespace DapperCRUDAPI.Controllers
         [HttpGet("{id}")]
 
         public Movie Get(int id)
-        {
+        { 
+
             return movieRepository.ViewMovieByID(id);
         }
 
