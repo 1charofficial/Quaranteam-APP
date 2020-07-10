@@ -36,7 +36,12 @@ Still to complete.
 5. Further extensions to the project which will be done in SQL. 
 
 
+**UPDATED
 
+Interface has been added IMoveRepository.
+Partial Validation has been completed - Still needs some work.
+We have a User Model and a DB to hold user data.
+Some test files have been completed in a seperate file and will be added to this project today.
 
 
 
