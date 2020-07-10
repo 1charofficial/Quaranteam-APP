@@ -1,0 +1,9 @@
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/obj/Debug/netstandard2.1/MovieRepository.Service.csprojAssemblyReference.cache
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/obj/Debug/netstandard2.1/MovieRepository.Service.AssemblyInfoInputs.cache
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/obj/Debug/netstandard2.1/MovieRepository.Service.AssemblyInfo.cs
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/obj/Debug/netstandard2.1/MovieRepository.Service.csproj.CoreCompileInputs.cache
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/bin/Debug/netstandard2.1/MovieRepository.Service.deps.json
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/bin/Debug/netstandard2.1/MovieRepository.Service.dll
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/bin/Debug/netstandard2.1/MovieRepository.Service.pdb
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/obj/Debug/netstandard2.1/MovieRepository.Service.dll
+/Users/codenationstudfent/Projects/Quaranteam-APP/MovieRepository.Service/obj/Debug/netstandard2.1/MovieRepository.Service.pdb

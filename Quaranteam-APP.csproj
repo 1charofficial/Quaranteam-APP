@@ -22,4 +22,9 @@
     <Folder Include="Views\Movie\" />
     <Folder Include="Validators\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="MovieRepository.Service\MovieRepository.Service.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -1,8 +1,8 @@
-﻿using System;
-using FluentValidation;
+﻿using FluentValidation;
 using DapperCRUDAPI.Models;
-using Quaranteam_APP.Models;
-using System.ComponentModel.DataAnnotations;
+
+
+
 
 
 namespace Quaranteam_APP.Validators
@@ -34,29 +34,33 @@ namespace Quaranteam_APP.Validators
 
             validator.ValidateAndThrow(movie);
 
-            //ValidationResult results = validator.Validate(movie);
-
-            //object results = null;
-
-            //if (results.Equals)
-            //{
-            //    foreach (var failure in results.Error)
-            //    {
-            //        Console.WriteLine("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
-            //    }
-
-
-                //}
-
-                //private ValidationResult Validate(object movieRepository)
-                //{
-                //    throw new NotImplementedException();
-                //}
-
-                //internal static object Validate(MovieValidator movie)
-                //{
-                //    throw new NotImplementedException();
-                //}
-            }
         }
+
+        //ValidationResult results = validator.Validate(movie);
+
+        //object results = null;
+
+        //if (results.Equals)
+        //{
+        //    foreach (var failure in results.Error)
+        //    {
+        //        Console.WriteLine("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
+        //    }
+
+
+        //}
+
+        //private ValidationResult Validate(object movieRepository)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //internal static object Validate(MovieValidator movie)
+        //{
+        //    throw new NotImplementedException();
+        //}
+        //        }
+        //    }
+        //}
     }
+}

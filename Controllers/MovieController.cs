@@ -1,11 +1,8 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using DapperCRUDAPI.Models;
-using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using Quaranteam_APP.Validators;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+//For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace DapperCRUDAPI.Controllers
 {
@@ -15,18 +12,14 @@ namespace DapperCRUDAPI.Controllers
     public class MovieController : Controller
     {
 
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
-
-
         private readonly Models.MovieRepository movieRepository;
 
         public MovieController()
         {
             movieRepository = new Models.MovieRepository();
         }
+
+
 
 
         [HttpGet]
